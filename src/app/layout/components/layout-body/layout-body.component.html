@@ -1,0 +1,11 @@
+<div ngClass="layout-body">
+  <div
+    class="alert"
+    [ngClass]="'alert-' + alert?.type"
+    role="alert"
+    *ngIf="!!alert"
+  >
+    {{ alert?.message }}
+  </div>
+  <ng-content></ng-content>
+</div>

@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-6 picture-frame">
+    <img
+      [ngClass]="value === goalEnum.GAIN ? 'selected' : ''"
+      src="assets/images/gain-weight.png"
+      width="64"
+      alt="gain-weight"
+      (click)="setValue(goalEnum.GAIN)"
+    />
+  </div>
+  <div class="col-md-6 picture-frame">
+    <img
+      [ngClass]="value === goalEnum.LOSE ? 'selected' : ''"
+      src="assets/images/lose-weight.png"
+      width="64"
+      alt="lose-weight"
+      (click)="setValue(goalEnum.LOSE)"
+    />
+  </div>
+</div>
